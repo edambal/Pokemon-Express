@@ -3,9 +3,10 @@ const router = express.Router();
 const pokemon = require('../models/pokedata');
 
 router.get('/',(req,res)=>{
-    res.render('index',{
-        poke:pokemon
-    })
+    console.log(pokemon);
+    // res.render('index',{
+    //     poke:pokemon
+    // })
 });
 
 
